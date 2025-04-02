@@ -1,0 +1,53 @@
+$primary-color: #ff6347;
+
+main
+{
+	#application:target
+	{
+		animation: none;
+
+		.content-box
+		{
+			animation: highlight-target 2s ease forwards;
+			outline: 1px solid $primary-color;
+
+			h2
+			{
+				color: $primary-color;
+			}
+		}
+	}
+
+	form
+	{
+		display: grid;
+		gap: 1em;
+		grid-auto-rows: minmax(2em, auto);
+		grid-template-columns: 1fr 5fr;
+		margin: 3vw;
+		text-align: left;
+
+		label
+		{
+			grid-column: 1;
+			text-align: right;
+
+			&[required]::before
+			{
+				color: $primary-color;
+				content: '* ';
+			}
+		}
+
+		
+		input
+		{
+			grid-column: 2;
+		}
+
+		.button
+		{
+			margin-left: auto;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+main
+{
+	.slide-heading
+	{
+		font-weight: bold;
+		font-size: 4em;
+		user-select: none;
+	}
+
+	.slide-container
+	{
+		overflow: hidden;
+		height: 30vh;
+		width: 40vw;
+
+		@media (max-aspect-ratio: 4/6) {
+			height: 15vh;
+		}
+	
+		&.line-slide,
+		&.line-slide .slide
+		{
+			height: 4em;
+			width: 100%;
+		}
+
+		.slide-wrapper
+		{
+			left: 0;
+			position: relative;
+			transition: all ease .3s;
+	
+			.slide
+			{
+				box-sizing: border-box;
+				display: none;
+				font-size: 3.5em;
+				font-weight: bold;
+				text-shadow: 3px 3px 3px #000000;
+				height: 30vh;
+				position: absolute;
+				user-select: none;
+				width: 40vw;
+
+				@media (max-aspect-ratio: 4/6) {
+					height: 15vh;
+				}
+			}
+			
+			:first-child
+			{
+				display: block;
+			}
+		}
+	}
+}

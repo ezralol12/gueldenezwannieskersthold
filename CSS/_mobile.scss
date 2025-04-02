@@ -1,0 +1,155 @@
+header
+{
+	padding: 4vw;
+
+	#page-title
+	{
+		font-size: 3em;
+	}
+
+	.logo
+	{
+		height: 6em;
+	}
+}
+
+main,
+header
+{
+	.button
+	{
+		font-size: 1.5em;
+	}
+
+	.dropdown
+	{
+		.menu
+		{
+			font-size: 1.8em;
+		}
+	}
+}
+
+main
+{
+	margin-bottom: 4vh;
+	
+	.container
+	{
+		margin: 3vh 0;
+		padding: 3vh 0;
+
+		.content-box {
+			font-size: 1.8em;
+			
+			h2
+			{
+				font-size: 1.7em;
+			}
+
+			hr
+			{
+				border-width: 1.8px;
+			}
+		}
+	}
+}
+
+main
+{
+	.layout-box
+	{
+		min-height: 30vh;
+	}
+
+	.layout-buttons
+	{
+		align-items: center;
+		flex-direction: column;
+		min-height: 50vh;
+
+		.content-box
+		{
+			margin: 2vh 0;
+			width: 55vw;
+
+			img
+			{
+				width: 20%;
+			}
+		}
+	}
+
+	.layout-img
+	{
+		flex-direction: column;
+		min-height: 30vh;
+
+		>*
+		{
+			margin: 2vh 0;
+		}
+
+		.content-box
+		{
+			width: 50vw;
+		}
+
+		.wrap-img
+		{
+			width: 50vw;
+		}
+	}
+
+	.layout-left
+	{
+		height: 20vh;
+
+		.content-banner
+		{
+			height: 15vh;
+		}
+	}
+
+	.layout-shelf
+	{
+		img
+		{
+			height: 40vh;
+		}
+	}
+
+	.layout-row
+	{
+		min-height: 30vh;
+	}
+}
+
+footer
+{
+	padding: 6vw;
+	font-size: 1.8em;
+
+	.links
+	{
+		flex-direction: column;
+	}
+	
+	.container
+	{
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.copyright
+	{
+		border-top-width: 3px;
+	}
+
+	a
+	{
+		margin-bottom: 0;
+		margin-left: 10px;
+	}
+}
